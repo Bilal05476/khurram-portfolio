@@ -1,6 +1,8 @@
 import "../css/Navigation.css";
+import { useState } from "react";
 
 const Navigation = () => {
+  const [navbarIcon, setNavbarIcon] = useState(false);
   return (
     <nav
       id="navbar"
@@ -14,14 +16,15 @@ const Navigation = () => {
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-target="#navbarNavAlt"
+          onClick={() => setNavbarIcon(!navbarIcon)}
         >
-          <span className="navbar-toggler-icon"></span>
+          <i
+            style={{ fontSize: "1.5rem" }}
+            className={`fa fa-${navbarIcon ? "times" : "bars"}`}
+          ></i>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="collapse navbar-collapse" id="navbarNavAlt">
           <div className="navbar-nav ml-auto mr-5">
             <a className="nav-item nav-link active-link" href="#home">
               Home

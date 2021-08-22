@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
+.navbar {
+  backdrop-filter: blur(5px);
+}
+
 .navbar .navbar-brand span,
 .navbar .navbar-brand {
   font-family: "Dancing Script", cursive;
@@ -9,6 +13,12 @@
 .navbar .navbar-brand span,
 .navbar .navbar-nav a.active-link {
   color: var(--themeBlue--);
+}
+.navbar .navbar-toggler {
+  background: transparent;
+  border: none !important;
+  outline: none !important;
+  color: var(--themeBlue--) !important;
 }
 
 .navbar .navbar-nav a {

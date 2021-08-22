@@ -15,7 +15,6 @@
 }
 .jumbotron h4 {
   margin: 0.7rem auto;
-  margin-bottom: 1.5rem;
 }
 .jumbotron h1 span,
 .jumbotron h4 span {
@@ -27,4 +26,20 @@
 }
 .social-links .social-link i:hover {
   color: var(--themeBlue--);
+}
+
+@media (max-width: 767px) {
+  .jumbotron{
+    padding: 2rem 1.2rem;
+  }
+  .jumbotron-profile-image {
+    width: 110%;
+    margin-top: 2rem;
+  }
+  .jumbotron h1{
+    font-size: 2.5rem;
+  }
+  .jumbotron h4{
+    font-size: 1.2rem;
+  }
 }

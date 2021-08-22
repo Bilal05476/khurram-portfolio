@@ -57,8 +57,8 @@ const TopJumbotron = () => {
               </a>
             </div>
           </div>
-          <div className="col-md-6">
-            <img src={Profile} alt="Profile" />
+          <div className="col-md-6 text-center">
+            <img className="jumbotron-profile-image" src={Profile} alt="Profile" />
           </div>
         </div>
       </div>

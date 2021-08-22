@@ -43,6 +43,22 @@
   height: 2px;
   margin-right: 1.2rem;
 }
-.about .designation-div small{
+.about .designation-div small {
   font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding: 2rem 1.8rem;
+    padding-top: 5rem;
+  }
+  .about h5 {
+    width: 30%;
+  }
+  .about h1 {
+    width: 100%;
+  }
+  .about .about-image {
+    display: none;
+  }
 }
