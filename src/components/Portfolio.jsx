@@ -1,3 +1,4 @@
+import "../css/Portfolio.css";
 const Portfolio = () => {
   return <div>Portfolio</div>;
 };
