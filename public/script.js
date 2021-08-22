@@ -1,4 +1,5 @@
 // mybutton = document.getElementById("myBtn");
+myNavbar = document.getElementById("navbar");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = () => {
@@ -14,11 +15,11 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     // document.getElementById("started").style.margin = ".7rem 2rem .7rem .7rem";
     // document.getElementById("logo").style.fontSize = "1.2rem";
-    document.getElementById("navbar").style.background = "rgb(0, 58, 134)";
+    myNavbar.style.backdropFilter = "blur(5px)";
   } else {
     // document.getElementById("started").style.margin = "1.2rem";
     // document.getElementById("logo").style.fontSize = "1.8rem";
-    document.getElementById("navbar").style.background = "transparent";
+    myNavbar.style.backdropFilter = "blur(0px)";
   }
 }
 
