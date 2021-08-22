@@ -43,3 +43,6 @@
   height: 2px;
   margin-right: 1.2rem;
 }
+.about .designation-div small{
+  font-weight: 600;
+}
