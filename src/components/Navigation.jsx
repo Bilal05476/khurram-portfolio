@@ -19,10 +19,10 @@ const Navigation = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav ml-auto mr-5">
-          <a className="nav-item nav-link active-link" href="#">
+          <a className="nav-item nav-link active-link" href="#home">
             Home
           </a>
-          <a className="nav-item nav-link" href="#">
+          <a className="nav-item nav-link" href="#about">
             About
           </a>
           <a className="nav-item nav-link" href="#">

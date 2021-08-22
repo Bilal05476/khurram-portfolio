@@ -6,7 +6,7 @@
   padding: 5rem;
   padding-bottom: 0 !important;
 }
-.jumbotron .left-div{
+.jumbotron .left-div {
   padding-top: 7rem;
 }
 .jumbotron h1,
@@ -19,9 +19,12 @@
 }
 .jumbotron h1 span,
 .jumbotron h4 span {
-  color: crimson;
+  color: var(--themeBlue--);
 }
 .social-links .social-link i {
   font-size: 1.4rem;
   color: #000;
+}
+.social-links .social-link i:hover {
+  color: var(--themeBlue--);
 }
