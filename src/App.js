@@ -1,7 +1,11 @@
+import Navigation from "./components/Navigation";
+import TopJumbotron from "./components/TopJumbotron";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Khurram Portfolio</h1>
+    <div className="app">
+      <Navigation />
+      <TopJumbotron />
     </div>
   );
 }
