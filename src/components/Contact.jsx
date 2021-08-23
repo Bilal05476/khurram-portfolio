@@ -1,5 +1,12 @@
 import "../css/Contact.css";
+import { useState } from "react";
+
 const Contact = () => {
+  const [email, setEmail] = useState("");
+  const onSubmitSubs = (e) => {
+    e.preventDefault();
+    alert(email);
+  };
   return (
     <div id="contact" className="contact container-fluid">
       <div className="row">
@@ -109,9 +116,15 @@ const Contact = () => {
           </a>
           <div className="subs-details pt-1">
             <form>
-              <input type="email" required placeholder="Enter your email..." />
+              <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                required
+                placeholder="Enter your email..."
+              />
               <br />
-              <button type="submit" className="hireBtn mt-4">
+              <button type="submit" className="hireBtn mt-3">
                 <i className="fa fa-paper-plane"></i>
                 Subscribe
               </button>

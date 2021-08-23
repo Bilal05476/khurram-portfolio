@@ -3,7 +3,6 @@
   padding: 2rem;
   padding-left: 4rem;
   margin-top: 2rem;
-
 }
 .contact .navbar-brand span,
 .contact .navbar-brand {
@@ -60,12 +59,27 @@
   border: 0.5px dotted var(--themeBlue--);
 }
 .contact .subscribe .subs-details input {
-  padding: 0.6rem;
+  padding: 0.3rem;
   padding-left: 0;
+  padding-top: 0;
   width: 60%;
   border: none;
   border-bottom: 1px solid var(--themeBlue--);
   outline: none !important;
   font-size: 0.9rem;
   background-color: transparent;
+}
+@media (max-width: 767px) {
+  .contact {
+    padding: 2rem;
+  }
+  .contact .subscribe .subs-details input {
+    width: 80%
+  }
+  .contact .socialLinks .line-1 {
+  width: 60%;
+}
+.contact .socialLinks .line-2 {
+  width: 80%;
+}
 }
