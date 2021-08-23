@@ -112,6 +112,7 @@ const Contact = () => {
               <input type="email" required placeholder="Enter your email..." />
               <br />
               <button type="submit" className="hireBtn mt-4">
+                <i className="fa fa-paper-plane"></i>
                 Subscribe
               </button>
             </form>
