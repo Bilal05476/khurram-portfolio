@@ -17,7 +17,7 @@
   border-radius: 10px;
 }
 .about h5 {
-  background-color: var(--themeBlue--);
+  background: var(--shadeBlueRight--);
   color: #fff;
   font-size: 0.8rem;
   padding-top: 0.6rem;
@@ -38,7 +38,7 @@
   align-items: center;
 }
 .about .designation-div span {
-  background-color: var(--themeBlue--);
+  background: var(--shadeBlueRight--);
   width: 30px;
   height: 2px;
   margin-right: 1.2rem;

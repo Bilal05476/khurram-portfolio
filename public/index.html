@@ -20,9 +20,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Sheikh Khurram | Portfolio</title>
   </head>
   <body>
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+      data-aos="flip-up"
+    >
+      <i class="fa fa-angle-double-up"></i>
+    </button>
     <div id="root"></div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -39,6 +48,10 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>

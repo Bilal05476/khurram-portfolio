@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div id="contact" className="contact container-fluid">
       <div className="row">
-        <div className="col-md-3 introSection py-4">
+        <div className="col-md-3 introSection ">
           <a className="navbar-brand" href="#home">
             Sheikh <span>Khurram</span>
           </a>
@@ -20,7 +20,7 @@ const Contact = () => {
             sed molestiae impedit?
           </p>
         </div>
-        <div className="col-md-2 navigationLinks py-4">
+        <div className="col-md-2 navigationLinks ">
           <a className="navbar-brand heading" href="#home">
             Li<span>nks</span>
           </a>
@@ -48,7 +48,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="col-md-3 socialLinks py-4">
+        <div className="col-md-3 socialLinks ">
           <a className="navbar-brand heading" href="#home">
             Social <span>Contact</span>
           </a>
@@ -110,7 +110,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="col-md-4 subscribe py-4">
+        <div className="col-md-4 subscribe ">
           <a className="navbar-brand heading" href="#home">
             Subs<span>cribe</span>
           </a>
@@ -131,6 +131,8 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <div className="col-md-12 text-left pt-1 copyrightSection"><small>
+          Copyright &copy; 2021, Sheikh Khurram</small></div>
       </div>
     </div>
   );
