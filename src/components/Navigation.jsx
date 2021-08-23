@@ -1,12 +1,30 @@
 import "../css/Navigation.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navigation = () => {
   const [navbarIcon, setNavbarIcon] = useState(false);
+  const [navbarBackground, setNavbarBackground] = useState(false);
+
+  // Change Navbar Background
+  const changeBackground = () => {
+    if (window.scrollY >= 66) {
+      setNavbarBackground(true);
+    } else {
+      setNavbarBackground(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackground();
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground);
+  });
   return (
     <nav
       id="navbar"
-      className="pt-3 navbar navbar-expand-md navbar-light fixed-top"
+      className={`navbar navbar-expand-md navbar-light fixed-top ${
+        navbarBackground ? "scrollNavbar" : ""
+      }`}
     >
       <div className="container">
         <a className="navbar-brand" href="#home">
