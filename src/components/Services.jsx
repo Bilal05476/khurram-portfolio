@@ -5,7 +5,6 @@ const Services = () => {
     <div id="services" className="services">
       <div className="container">
         <div className="row">
-         
           <div className="services-header col-md-12">
             <small>SERVICES</small>
             <h1 className="display-5">MY SERVICES</h1>
@@ -14,19 +13,19 @@ const Services = () => {
         </div>
         <div className="card-deck services-card mb-2">
           <ServicesCard
-            icon="servicestack"
+            icon="fab fa-facebook"
             title="Services Title"
             desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
           possimus sequi beatae impedit"
           />
           <ServicesCard
-            icon="servicestack"
+            icon="fab fa-servicestack"
             title="Services Title"
             desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
           possimus sequi beatae impedit"
           />
           <ServicesCard
-            icon="servicestack"
+            icon="fa fa-paper-plane"
             title="Services Title"
             desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
           possimus sequi beatae impedit"
@@ -34,19 +33,19 @@ const Services = () => {
         </div>
         <div className="card-deck services-card mb-2">
           <ServicesCard
-            icon="servicestack"
+            icon="fa fa-shipping-fast"
             title="Services Title"
             desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
           possimus sequi beatae impedit"
           />
           <ServicesCard
-            icon="servicestack"
+            icon="fa fa-at"
             title="Services Title"
             desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
           possimus sequi beatae impedit"
           />
           <ServicesCard
-            icon="servicestack"
+            icon="fa fa-industry"
             title="Services Title"
             desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
           possimus sequi beatae impedit"

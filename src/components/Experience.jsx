@@ -10,8 +10,8 @@ const Experience = () => {
             <h1 className="display-5">MY EXPERIENCE</h1>
             <div className="hori-line"></div>
           </div>
-          <div className="col-md-6">Left</div>
-          <div className="col-md-6">right</div>
+          <div className="col-md-6">Left || wait for content</div>
+          <div className="col-md-6">right || wait for content</div>
         </div>
       </div>
     </div>
