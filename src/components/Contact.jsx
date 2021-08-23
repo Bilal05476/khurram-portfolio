@@ -115,7 +115,7 @@ const Contact = () => {
             Subs<span>cribe</span>
           </a>
           <div className="subs-details pt-1">
-            <form>
+            <form onSubmit={onSubmitSubs}>
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
