@@ -21,25 +21,29 @@
   color: var(--themeBlue--);
 }
 .social-links .social-link i {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  padding: 0.3rem;
   color: #000;
+  border-radius: 2px;
 }
 .social-links .social-link i:hover {
-  color: var(--themeBlue--);
+  color: #fff;
+  box-shadow: 1px 1px 3px var(--themeBlue--);
+  background: var(--shadeBlueRight--);
 }
 
 @media (max-width: 767px) {
-  .jumbotron{
+  .jumbotron {
     padding: 2rem 1.2rem;
   }
   .jumbotron-profile-image {
     width: 110%;
     margin-top: 2rem;
   }
-  .jumbotron h1{
+  .jumbotron h1 {
     font-size: 2.5rem;
   }
-  .jumbotron h4{
+  .jumbotron h4 {
     font-size: 1.2rem;
   }
 }

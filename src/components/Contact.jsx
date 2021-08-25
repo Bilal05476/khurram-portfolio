@@ -56,7 +56,7 @@ const Contact = () => {
             <a
               href="tel:+923248213362"
               target="blank"
-              className="contact-link mr-3 mb-2"
+              className="contact-link mr-1 mb-2"
             >
               <i className="fa fa-phone-square-alt mr-2"></i>
               <small>+92 3248213362</small>
@@ -64,7 +64,7 @@ const Contact = () => {
             <a
               href="mailto:bilalahmed6551@gmail.com"
               target="blank"
-              className="contact-link mr-3"
+              className="contact-link mr-1"
             >
               <i className="fa fa-envelope mr-2"></i>
               <small>bilalahmed6551@gmail.com</small>
@@ -76,28 +76,28 @@ const Contact = () => {
             <a
               href="https://facebook.com"
               target="blank"
-              className="social-link mr-3"
+              className="social-link mr-1"
             >
               <i className="fab fa-facebook-square"></i>
             </a>
             <a
               href="https://twitter.com"
               target="blank"
-              className="social-link mr-3"
+              className="social-link mr-1"
             >
               <i className="fab fa-twitter"></i>
             </a>
             <a
               href="https://youtube.com"
               target="blank"
-              className="social-link mr-3"
+              className="social-link mr-1"
             >
               <i className="fab fa-youtube"></i>
             </a>
             <a
               href="https://linkedin.com"
               target="blank"
-              className="social-link mr-3"
+              className="social-link mr-1"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>

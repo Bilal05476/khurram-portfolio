@@ -23,35 +23,35 @@ const TopJumbotron = () => {
               <a
                 href="https://facebook.com"
                 target="blank"
-                className="social-link mr-3"
+                className="social-link mr-1"
               >
                 <i className="fab fa-facebook-square"></i>
               </a>
               <a
                 href="https://twitter.com"
                 target="blank"
-                className="social-link mr-3"
+                className="social-link mr-1"
               >
                 <i className="fab fa-twitter"></i>
               </a>
               <a
                 href="https://youtube.com"
                 target="blank"
-                className="social-link mr-3"
+                className="social-link mr-1"
               >
                 <i className="fab fa-youtube"></i>
               </a>
               <a
                 href="https://linkedin.com"
                 target="blank"
-                className="social-link mr-3"
+                className="social-link mr-1"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
               <a
                 href="https://google.com"
                 target="blank"
-                className="social-link mr-3"
+                className="social-link mr-1"
               >
                 <i className="fab fa-google-plus-g"></i>
               </a>
