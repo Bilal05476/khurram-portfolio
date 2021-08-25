@@ -14,9 +14,12 @@
   font-size: 1.5rem;
 }
 .navbar.scrollNavbar .navbar-brand,
-.navbar.scrollNavbar .navbar-brand span{
+.navbar.scrollNavbar .navbar-brand span {
   font-size: 1.2rem;
+}
 
+.navbar-collapse.show {
+  backdrop-filter: blur(10px);
 }
 
 .navbar .navbar-brand span,
