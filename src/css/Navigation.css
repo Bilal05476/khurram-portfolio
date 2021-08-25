@@ -7,6 +7,10 @@
   backdrop-filter: blur(10px);
   padding-top: 0.7rem;
 }
+
+.navbar.blurryBack {
+  backdrop-filter: blur(10px);
+}
 .navbar .navbar-brand span,
 .navbar .navbar-brand {
   font-family: "Dancing Script", cursive;
@@ -18,12 +22,7 @@
   font-size: 1.2rem;
 }
 
-.navbar-collapse.show {
-  backdrop-filter: blur(10px);
-}
-
-.navbar .navbar-brand span,
-.navbar .navbar-nav a.active-link {
+.navbar .navbar-brand span {
   color: var(--themeBlue--);
 }
 .navbar .navbar-toggler {
@@ -34,4 +33,10 @@
 }
 .navbar .navbar-nav a {
   font-weight: 700;
+}
+.navbar .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+}
+.navbar .navbar-nav a.menu-active-link {
+  color: var(--themeBlue--) !important;
 }
