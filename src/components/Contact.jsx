@@ -15,7 +15,6 @@ const Contact = () => {
       toast.addEventListener("mouseleave", Swal.resumeTimer);
     },
   });
-
   const onSubmitSubs = (e) => {
     e.preventDefault();
     Toast.fire({
