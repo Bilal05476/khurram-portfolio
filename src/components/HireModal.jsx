@@ -69,7 +69,8 @@ const HireModal = ({ id }) => {
                   required="true"
                 />
                 <textarea
-                  row="4"
+                  rows="2"
+                  type="text"
                   value={requirements}
                   onChange={(e) => setRequirements(e.target.value)}
                   placeholder="Enter your requirements"
