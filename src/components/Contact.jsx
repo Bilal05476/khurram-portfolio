@@ -1,12 +1,30 @@
 import "../css/Contact.css";
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener("mouseenter", Swal.stopTimer);
+      toast.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+  });
+
   const onSubmitSubs = (e) => {
     e.preventDefault();
-    alert(email);
+    Toast.fire({
+      icon: "success",
+      title: `${email} Subscribed successfully`,
+    });
+    setEmail("");
   };
+
   return (
     <div id="contact" className="contact container-fluid">
       <div className="row">
@@ -131,8 +149,9 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="col-md-12 text-left pt-1 copyrightSection"><small>
-          Copyright &copy; 2021, Sheikh Khurram</small></div>
+        <div className="col-md-12 text-left pt-1 copyrightSection">
+          <small>Copyright &copy; 2021, Sheikh Khurram</small>
+        </div>
       </div>
     </div>
   );

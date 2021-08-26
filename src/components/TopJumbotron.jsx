@@ -1,5 +1,6 @@
 import "../css/TopJumbotron.css";
 import Profile from "../images/profile.png";
+import HireModal from "./HireModal";
 
 const TopJumbotron = () => {
   return (
@@ -18,7 +19,14 @@ const TopJumbotron = () => {
               voluptates suscipit reiciendis ratione soluta incidunt. Maxime
               officiis aperiam modi! Dolores?
             </p>
-            <button className="hireBtn">Hire</button>
+            <button
+              className="hireBtn"
+              data-toggle="modal"
+              data-target="#hiringModal"
+            >
+              Hire
+            </button>
+            <HireModal id="hiringModal" />
             <div className="social-links">
               <a
                 href="https://facebook.com"
@@ -58,7 +66,11 @@ const TopJumbotron = () => {
             </div>
           </div>
           <div className="col-md-6 text-center">
-            <img className="jumbotron-profile-image" src={Profile} alt="Profile" />
+            <img
+              className="jumbotron-profile-image"
+              src={Profile}
+              alt="Profile"
+            />
           </div>
         </div>
       </div>

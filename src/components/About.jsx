@@ -1,6 +1,6 @@
 import "../css/About.css";
 import Profile from "../images/profile.png";
-
+import HireModal from "./HireModal";
 const About = () => {
   return (
     <>
@@ -30,7 +30,14 @@ const About = () => {
               ipsum modi repudiandae placeat. Officiis labore et molestias,
               veritatis saepe veniam!
             </p>
-            <button className="hireBtn">Hire</button>
+            <button
+              className="hireBtn"
+              data-toggle="modal"
+              data-target="#hiringModal"
+            >
+              Hire
+            </button>
+            <HireModal id="hiringModal" />
           </div>
         </div>
       </div>
