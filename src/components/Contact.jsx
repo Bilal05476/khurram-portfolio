@@ -71,20 +71,20 @@ const Contact = () => {
           </a>
           <div className="contact-details mb-2 pt-1">
             <a
-              href="tel:+923248213362"
+              href="tel:+923020129450"
               target="blank"
               className="contact-link mr-1 mb-2"
             >
               <i className="fa fa-phone-square-alt mr-2"></i>
-              <small>+92 3248213362</small>
+              <small>+92 3020129450</small>
             </a>
             <a
-              href="mailto:bilalahmed6551@gmail.com"
+              href="mailto:khurramsmm@gmail.com"
               target="blank"
               className="contact-link mr-1"
             >
               <i className="fa fa-envelope mr-2"></i>
-              <small>bilalahmed6551@gmail.com</small>
+              <small>khurramsmm@gmail.com</small>
             </a>
           </div>
           <hr className="line-1" />
