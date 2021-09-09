@@ -15,9 +15,9 @@ const TopJumbotron = () => {
               I'AM A <span>SOCIAL MEDIA</span> PROBLEM SOLVER
             </h4>
             <p className="">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-              voluptates suscipit reiciendis ratione soluta incidunt. Maxime
-              officiis aperiam modi! Dolores?
+             I’m Khurram Social Media solutions provider. With over 2 years of Experience, 
+             I’ve learned several techniques and strategies to out rank your competitor’s and grow your 
+             Social Media presence. 
             </p>
             <button
               className="hireBtn"
