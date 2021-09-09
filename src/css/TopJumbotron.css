@@ -26,6 +26,7 @@
   color: #000;
   border-radius: 2px;
 }
+
 .social-links .social-link i:hover {
   color: #fff;
   box-shadow: 1px 1px 3px var(--themeBlue--);

@@ -15,9 +15,9 @@ const TopJumbotron = () => {
               I'AM A <span>SOCIAL MEDIA</span> PROBLEM SOLVER
             </h4>
             <p className="">
-             I’m Khurram Social Media solutions provider. With over 2 years of Experience, 
-             I’ve learned several techniques and strategies to out rank your competitor’s and grow your 
-             Social Media presence. 
+              I’m Khurram Social Media solutions provider. With over 2 years of
+              Experience, I’ve learned several techniques and strategies to out
+              rank your competitor’s and grow your Social Media presence.
             </p>
             <button
               className="hireBtn"
@@ -57,7 +57,7 @@ const TopJumbotron = () => {
                 <i className="fab fa-linkedin-in"></i>
               </a>
               <a
-                href="https://google.com"
+                href="mailto:khurramsmm@gmail.com"
                 target="blank"
                 className="social-link mr-1"
               >

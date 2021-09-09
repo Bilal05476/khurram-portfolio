@@ -119,7 +119,7 @@ const Contact = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a
-              href="https://google.com"
+              href="mailto:khurramsmm@gmail.com"
               target="blank"
               className="social-link mr-3"
             >
