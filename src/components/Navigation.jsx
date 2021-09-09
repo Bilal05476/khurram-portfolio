@@ -107,6 +107,22 @@ const Navigation = () => {
             >
               Contact
             </a>
+            <a
+              className="nav-item nav-link fiverLink"
+              onClick={() => activeLinks(".fiverLink")}
+              href="https://www.fiverr.com/khurramsmm"
+              target="blank"
+            >
+              Fiverr
+            </a>
+            <a
+              className="nav-item nav-link upworkLink"
+              onClick={() => activeLinks(".upworkLink")}
+              href="https://www.upwork.com/o/profiles/users/~014d1a04b01142d501/"
+              target="blank"
+            >
+              Upwork
+            </a>
           </div>
         </div>
       </div>
