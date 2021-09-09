@@ -12,16 +12,21 @@ const Experience = () => {
           </div>
           <div className="col-md-6 mb-5">
             In my journey, I’ve developed several E-commerce stores, gave a
-            boost to YouTube channels, did Facebook ads, and along with this,
-            I’ve done Instagram influencers account management, TIKTOK
+            boost to YouTube Channels, did Facebook Ads, and along with this,
+            I’ve done Instagram Influencers account management, TIKTOK
             marketing, LinkedIn, Twitter, and Pinterest management. Also, with
-            the worldwide client’s satisfaction, I’ve worked on all other social
-            media platforms as well.
+            the worldwide client’s satisfaction, I’ve worked on all other Social
+            Media platforms as well.
+            <br />
+            <br />
+            Here, you can look upon my{" "}
+            <a className="text-info" href="#portfolio">
+              portfolio
+            </a>{" "}
+            to see how I help to build a better tomorrow for my clients through
+            Social Media.
           </div>
-          <div className="col-md-6">
-            Here, you can look upon my portfolio to see how I help to build a
-            better tomorrow for my clients through social media.
-          </div>
+          <div className="col-md-6">Left Content || waiting</div>
         </div>
       </div>
     </div>
