@@ -145,4 +145,7 @@ select {
   .card.service-card {
     margin: 30px auto;
   }
+  .services-header h1 {
+    font-size: 2rem;
+  }
 }

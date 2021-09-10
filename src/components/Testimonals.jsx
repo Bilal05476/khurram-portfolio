@@ -16,8 +16,8 @@ const Testimonals = () => {
           infiniteLoop={true}
           showThumbs={false}
           showStatus={false}
-          autoPlay={false}
-          interval={5000}
+          autoPlay={true}
+          interval={6000}
         >
           <TestimonalCard
             name="Shahjahan Miah"
