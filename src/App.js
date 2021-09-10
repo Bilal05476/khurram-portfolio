@@ -1,5 +1,5 @@
 import About from "./components/About";
-import Testimonals from "./components/Testimonals";
+// import Testimonals from "./components/Testimonals";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Navigation from "./components/Navigation";
@@ -16,7 +16,7 @@ function App() {
       <Experience />
       <Portfolio />
       <Services />
-      <Testimonals />
+      {/* <Testimonals /> */}
       <Contact />
     </div>
   );

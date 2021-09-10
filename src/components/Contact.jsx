@@ -57,8 +57,8 @@ const Contact = () => {
             <a className="nav-item nav-link py-0 pt-1" href="#services">
               Services
             </a>
-            <a className="nav-item nav-link py-0 pt-1" href="#blog">
-              Blog
+            <a className="nav-item nav-link py-0 pt-1" href="#testimonal">
+              Testimonals
             </a>
             <a className="nav-item nav-link py-0 pt-1" href="#contact">
               Contact

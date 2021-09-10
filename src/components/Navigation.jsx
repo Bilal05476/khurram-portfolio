@@ -96,7 +96,7 @@ const Navigation = () => {
             <a
               className="nav-item nav-link tesMenu"
               onClick={() => activeLinks(".tesMenu")}
-              href="#testimonals"
+              href="#testimonal"
             >
               Testimonals
             </a>
