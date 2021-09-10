@@ -5,7 +5,7 @@ const PackageModal = ({ id }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [packageName, setPackageName] = useState("");
+  const [packageName, setPackageName] = useState("select");
   const Toast = Swal.mixin({
     toast: true,
     position: "top-end",
@@ -28,6 +28,25 @@ const PackageModal = ({ id }) => {
     setPhone("");
     setPackageName("");
   };
+
+  const options = [
+    {
+      label: "Select",
+      value: "select",
+    },
+    {
+      label: "Basic",
+      value: "basic",
+    },
+    {
+      label: "Standard",
+      value: "standard",
+    },
+    {
+      label: "Premium",
+      value: "premium",
+    },
+  ];
 
   return (
     <div className="hireMe">
@@ -66,15 +85,35 @@ const PackageModal = ({ id }) => {
                   placeholder="Enter your phone"
                   required={true}
                 />
-                <input
-                  type="text"
+                <select
                   value={packageName}
                   onChange={(e) => setPackageName(e.target.value)}
-                  placeholder="Enter your Package Name"
-                  required={true}
-                />
+                  style={{
+                    color: packageName === "select" ? "#000" : "#fff",
+                    background:
+                      packageName === "basic"
+                        ? "crimson"
+                        : packageName === "standard"
+                        ? "rgb(0, 58, 134)"
+                        : packageName === "premium"
+                        ? "rgb(3, 180, 86)"
+                        : "",
+                  }}
+                >
+                  {options.map((option) => (
+                    <option
+                      style={{
+                        color: packageName === "select" ? "#000" : "#fff",
+                      }}
+                      key={option.value}
+                      value={option.value}
+                    >
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
 
-                {!name || !email || !phone || !packageName ? (
+                {!name || !email || !phone || packageName === "select" ? (
                   <div className="disabledHireBtn">Send</div>
                 ) : (
                   <button type="submit" className="hireBtn">
