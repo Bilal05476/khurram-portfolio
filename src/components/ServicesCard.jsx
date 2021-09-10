@@ -1,35 +1,67 @@
-const ServicesCard = ({ icon, title, desc }) => {
+import { useState } from "react";
+import PackageModal from "./PackageModal";
+
+const ServicesCard = ({
+  packageLevel,
+  price,
+  serviceName,
+  detailServices,
+  packageClass,
+}) => {
+  const [toggleDetails, setToggleDetails] = useState(false);
   return (
-    <div className="card service-card">
-      <div className="box">
-        <div className="content">
-          <div className="icon">
-            <i className="fa fa-paper-plane"></i>
+    <>
+      <div
+        className={`card service-card ${packageClass}`}
+        style={{ height: toggleDetails ? "900px" : "500px" }}
+      >
+        <div className="box">
+          <div className="content">
+            <div className="icon">
+              <i className="fa fa-paper-plane"></i>
+            </div>
+            <h3>{packageLevel}</h3>
+            <h4>
+              <sup>$</sup>
+              {price}
+            </h4>
+            <ul>
+              {serviceName.map((item, ind) => (
+                <li key={ind}>
+                  <i className="fa fa-check"></i>
+                  {item}
+                </li>
+              ))}
+              {toggleDetails
+                ? detailServices.map((item, ind) => (
+                    <li key={ind}>
+                      <i className="fa fa-check"></i>
+                      {item}
+                    </li>
+                  ))
+                : ""}
+            </ul>
+            {toggleDetails ? (
+              <>
+                <p onClick={() => setToggleDetails(false)}>Hide Details</p>
+                <br />
+                <button
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#packageModal"
+                  className="order-now"
+                >
+                  Order Now
+                </button>
+              </>
+            ) : (
+              <p onClick={() => setToggleDetails(true)}>More Details</p>
+            )}
           </div>
-          <h3>Basic</h3>
-          <h4>
-            <sup>$</sup>25
-          </h4>
-          <ul>
-            <li>
-              <i className="fa fa-check"></i>
-              10 GB Space
-            </li>
-            <li>
-              <i className="fa fa-check"></i>1 Domain Names
-            </li>
-            <li>
-              <i className="fa fa-check"></i>1 Email Address
-            </li>
-            <li>
-              <i className="fa fa-times"></i>
-              Live Support
-            </li>
-          </ul>
-          <a href="#home">Order Now</a>
         </div>
       </div>
-    </div>
+      <PackageModal id="packageModal" />
+    </>
   );
 };
 

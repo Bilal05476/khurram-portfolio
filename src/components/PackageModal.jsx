@@ -1,13 +1,11 @@
-import "../css/HireModal.css";
 import { useState } from "react";
 import Swal from "sweetalert2";
 
-const HireModal = ({ id }) => {
+const PackageModal = ({ id }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [requirements, setRequirements] = useState("");
-
+  const [packageName, setPackageName] = useState("");
   const Toast = Swal.mixin({
     toast: true,
     position: "top-end",
@@ -23,12 +21,12 @@ const HireModal = ({ id }) => {
     e.preventDefault();
     Toast.fire({
       icon: "success",
-      title: "I will contact you shortly, Thank you for reaching out to me!",
+      title: "I will contact you shortly, Thank you!",
     });
     setName("");
     setEmail("");
     setPhone("");
-    setRequirements("");
+    setPackageName("");
   };
 
   return (
@@ -68,15 +66,15 @@ const HireModal = ({ id }) => {
                   placeholder="Enter your phone"
                   required={true}
                 />
-                <textarea
-                  rows="2"
+                <input
                   type="text"
-                  value={requirements}
-                  onChange={(e) => setRequirements(e.target.value)}
-                  placeholder="Enter your requirements"
+                  value={packageName}
+                  onChange={(e) => setPackageName(e.target.value)}
+                  placeholder="Enter your Package Name"
                   required={true}
                 />
-                {!name || !email || !phone || !requirements ? (
+
+                {!name || !email || !phone || !packageName ? (
                   <div className="disabledHireBtn">Send</div>
                 ) : (
                   <button type="submit" className="hireBtn">
@@ -95,4 +93,4 @@ const HireModal = ({ id }) => {
   );
 };
 
-export default HireModal;
+export default PackageModal;

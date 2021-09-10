@@ -13,22 +13,67 @@ const Services = () => {
         </div>
         <div className="card-deck services-card mb-2">
           <ServicesCard
-            icon="fab fa-facebook"
-            title="Services Title"
-            desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          possimus sequi beatae impedit"
+            packageSlug="Basic"
+            packageLevel="Basic"
+            price="150"
+            serviceName={[
+              "Personalized Social Media Deck",
+              "Competitor Analysis",
+              "Complete Social Media Strategy",
+            ]}
+            detailServices={[
+              "Social Media Profile Optimization ",
+              "Dedicated Account Manager ",
+              "16 Custom Posts/Month Total ",
+              "2 Social Networks ",
+              "Up To $500 Monthly Ad Budget ",
+              "Comprehensive Monthly Report ",
+            ]}
+            packageClass="basic"
           />
           <ServicesCard
-            icon="fab fa-servicestack"
-            title="Services Title"
-            desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          possimus sequi beatae impedit"
+            packageSlug="Standard"
+            packageLevel="Standard"
+            price="250"
+            serviceName={[
+              "Personalized Social Media Deck",
+              "Competitor Analysis",
+              "Complete Social Media Strategy",
+            ]}
+            detailServices={[
+              "Social Media Profile Optimization ",
+              "Dedicated Account Manager ",
+              "24 Custom Posts/Month Total ",
+              "3 Social Networks ",
+              "Up To $500 Monthly Ad Budget ",
+              "Comprehensive Monthly Report ",
+              "Chatbot Integration ",
+              "Retargeting ",
+              "A/B Split Testing ",
+            ]}
+            packageClass="standard"
           />
           <ServicesCard
-            icon="fa fa-paper-plane"
-            title="Services Title"
-            desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          possimus sequi beatae impedit"
+            packageSlug="Premium"
+            packageLevel="Premium"
+            price="300"
+            serviceName={[
+              "Personalized Social Media Deck",
+              "Competitor Analysis",
+              "Complete Social Media Strategy",
+            ]}
+            detailServices={[
+              "Social Media Profile Optimization ",
+              "Dedicated Account Manager ",
+              "32 Custom Posts/Month Total ",
+              "4 Social Networks ",
+              "Up To $1,000 Monthly Ad Budget ",
+              "Comprehensive Monthly Report ",
+              "Influencer Marketing ",
+              "Retargeting ",
+              "A/B Split Testing ",
+            ]}
+            packageClass="premium"
           />
         </div>
       </div>

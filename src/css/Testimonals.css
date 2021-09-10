@@ -1,45 +1,44 @@
+#testimonal {
+  padding-top: 7rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
 .carousel-root {
   width: 64% !important;
   margin: auto !important;
-  margin-top: 3% !important;
 }
-
 .carousel .slide {
   background: #fff !important;
+  padding-top: 20px;
   color: black;
   height: 100%;
 }
 
-.carousel .slide img {
-  width: 139px !important;
-  border-radius: 50%;
-}
-
 .myCarousel {
-  background: #fafafa;
-  margin-top: -6%;
+  background: rgb(241, 241, 241);
   width: 54%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
-  padding-bottom: 8%;
+  padding-bottom: 10%;
   padding-left: 5%;
   padding-right: 5%;
-  border: 1px solid #ddd;
-  height: 286px;
+  border: 2px solid #ddd;
+  height: 350px;
 }
 
 .carousel .control-dots {
   padding-left: 5px !important;
   outline: 0;
-  bottom: 5% !important;
+  bottom: 2% !important;
 }
 
 .myCarousel h3 {
-  color: #222;
+  color: var(--themeBlue--);
   font-weight: 100;
   letter-spacing: 0.2px;
   margin-bottom: 4px;
+  margin-top: 10px;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 17px;
@@ -50,22 +49,20 @@
   margin-top: 0;
   padding-top: 0;
   font-weight: 500;
-  color: #787878;
+  color: #919191;
   font-size: 14px;
 }
 
 .myCarousel p {
-  font-weight: 100 !important;
   line-height: 29px !important;
-  color: #222;
+  color: #000;
   font-size: 15px;
-  font-family: sans-serif;
   max-height: 67px;
 }
 
 .myCarousel p:before {
   content: "“";
-  color: #aaa;
+  color: var(--themeBlue--);
   font-size: 26px;
   font-family: monospace;
   font-weight: 100;
@@ -73,7 +70,7 @@
 
 .myCarousel p:after {
   content: "”";
-  color: #aaa;
+  color: var(--themeBlue--);
   font-size: 26px;
   font-family: monospace;
   font-weight: 100;
@@ -108,21 +105,8 @@
     display: none !important;
   }
   .myCarousel {
-    background: #fafafa;
-    margin-top: -9%;
     width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 8%;
-    padding-bottom: 12.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border: 1px solid #ddd;
-    height: 269px;
-  }
-
-  .carousel .slide img {
-    width: 24% !important;
-    border-radius: 50%;
+    padding-bottom: 15.5%;
+    height: 365px;
   }
 }

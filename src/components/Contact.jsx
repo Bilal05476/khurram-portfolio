@@ -42,7 +42,7 @@ const Contact = () => {
             Li<span>nks</span>
           </a>
           <div className="navbar-nav ml-auto mr-5 ">
-            <a className="nav-item nav-link active-link py-0 pt-1" href="#home">
+            <a className="nav-item nav-link py-0 pt-1" href="#home">
               Home
             </a>
             <a className="nav-item nav-link py-0 pt-1" href="#about">
@@ -150,11 +150,13 @@ const Contact = () => {
         </div>
         <div className="col-md-12 text-left pt-1 copyrightSection">
           <small>
-            Copyright &copy; 2021, Sheikh Khurram,<br /> Made with 💝 By{" "}
+            Copyright &copy; 2021, Sheikh Khurram,
+            <br /> Made with 💝 By{" "}
             <a
               className="text-info"
               href="https://bilalahmed.work"
               target="blank"
+              style={{ textDecoration: "none" }}
             >
               Bilal Ahmed
             </a>

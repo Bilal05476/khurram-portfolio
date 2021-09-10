@@ -15,6 +15,19 @@
   scroll-behavior: smooth;
 }
 
+.order-now {
+  color: var(--themeBlue--);
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid var(--themeBlue--);
+  padding: 0.5rem 1.3rem;
+  outline: none !important;
+}
+.order-now:hover {
+  background: var(--shadeBlueRight--);
+  color: #fff;
+}
+
 .hireBtn {
   color: var(--themeBlue--);
   background: transparent;
@@ -131,4 +144,38 @@
     var(--themeBlue--) 0%,
     rgb(2, 54, 114) 100%
   );
+}
+/* Experience Partition */
+.exp-duration-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.circle-top,
+.line-vertical,
+.circle-bottom {
+  background-color: var(--themeBlue--);
+}
+.circle-top,
+.circle-bottom {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.line-vertical {
+  width: 4px;
+  height: 100px;
+}
+@media (max-width: 820px) {
+  .exp-duration-line {
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .line-vertical {
+    width: 100px;
+    height: 4px;
+  }
 }
