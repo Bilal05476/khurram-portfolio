@@ -43,7 +43,12 @@ const HireModal = ({ id }) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-body">
-              <form onSubmit={onSubmitModal}>
+              <form
+                name="hireForm"
+                method="POST"
+                data-netlify="true"
+                onSubmit={onSubmitModal}
+              >
                 <p className="navbar-brand my-3 text-center">
                   Sheikh <span>Khurram</span>
                 </p>

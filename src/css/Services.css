@@ -140,9 +140,7 @@ select {
   margin-bottom: 1.2rem;
   letter-spacing: 1px;
 }
-select option {
-  color: #000;
-}
+
 @media (max-width: 820px) {
   .card.service-card {
     margin: 30px auto;

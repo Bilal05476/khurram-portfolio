@@ -79,47 +79,47 @@ const Contact = () => {
               <small>+92 3020129450</small>
             </a>
             <a
-              href="mailto:khurramsmm@gmail.com"
+              href="mailto:khurrumsmm@gmail.com"
               target="blank"
               className="contact-link mr-1"
             >
               <i className="fa fa-envelope mr-2"></i>
-              <small>khurramsmm@gmail.com</small>
+              <small>khurrumsmm@gmail.com</small>
             </a>
           </div>
           <hr className="line-1" />
           <hr className="line-2" />
           <div className="social-links mt-2">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/Sheikh.M.Khurram"
               target="blank"
               className="social-link mr-1"
             >
               <i className="fab fa-facebook-square"></i>
             </a>
-            <a
+            {/* <a
               href="https://twitter.com"
               target="blank"
               className="social-link mr-1"
             >
               <i className="fab fa-twitter"></i>
-            </a>
+            </a> */}
             <a
-              href="https://youtube.com"
+              href="https://instagram.com/khurramsmm"
               target="blank"
               className="social-link mr-1"
             >
-              <i className="fab fa-youtube"></i>
+              <i className="fab fa-instagram"></i>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/muhammad-khurram-2575641b0"
               target="blank"
               className="social-link mr-1"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a
-              href="mailto:khurramsmm@gmail.com"
+              href="mailto:khurrumsmm@gmail.com"
               target="blank"
               className="social-link mr-3"
             >
@@ -132,7 +132,12 @@ const Contact = () => {
             Subs<span>cribe</span>
           </a>
           <div className="subs-details pt-1">
-            <form onSubmit={onSubmitSubs}>
+            <form
+              name="subscribeForm"
+              method="POST"
+              data-netlify="true"
+              onSubmit={onSubmitSubs}
+            >
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}

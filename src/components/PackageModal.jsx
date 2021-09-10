@@ -26,7 +26,7 @@ const PackageModal = ({ id }) => {
     setName("");
     setEmail("");
     setPhone("");
-    setPackageName("");
+    setPackageName("select");
   };
 
   const options = [
@@ -60,7 +60,12 @@ const PackageModal = ({ id }) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-body">
-              <form onSubmit={onSubmitModal}>
+              <form
+                name="packageForm"
+                method="POST"
+                data-netlify="true"
+                onSubmit={onSubmitModal}
+              >
                 <p className="navbar-brand my-3 text-center">
                   Sheikh <span>Khurram</span>
                 </p>
