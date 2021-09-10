@@ -94,11 +94,11 @@ const Navigation = () => {
               Services
             </a>
             <a
-              className="nav-item nav-link blogMenu"
-              onClick={() => activeLinks(".blogMenu")}
-              href="#blog"
+              className="nav-item nav-link tesMenu"
+              onClick={() => activeLinks(".tesMenu")}
+              href="#testimonals"
             >
-              Blog
+              Testimonals
             </a>
             <a
               className="nav-item nav-link contactMenu"

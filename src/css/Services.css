@@ -21,22 +21,115 @@
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
-.services .services-card .service-card {
-  backdrop-filter: blur(10px);
-  box-shadow: 0.1px 1px 5px var(--themeBlue--);
-  padding: 1.2rem;
-  margin: 1.3rem;
+
+.card.service-card {
   display: flex;
-  flex-direction: column;
-  background: rgba(206, 205, 205, 0.329);
-  font-size: 0.8rem;
-  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  padding: 100px 0 50px;
 }
-.services .services-card .service-card:hover {
-  box-shadow: 0.3px 2px 10px var(--themeBlue--);
+.card.service-card {
+  position: relative;
+  min-width: 320px;
+  height: 500px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
 }
-.services .services-card .service-card .services-icon {
-  font-size: 2.2rem;
-  margin-bottom: 0.2rem;
-  color: var(--themeBlue--);
+.card.service-card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #f1f1f1;
+  border-radius: 15px;
+  border: 2px solid #f6f6f6;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card.service-card:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+.card.service-card .box .content {
+  padding: 20px;
+  text-align: center;
+  color: #212121;
+}
+.card.service-card .box .content .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+.card.service-card .box .content h3 {
+  font-size: 1.8em;
+
+  font-weight: 300;
+}
+.card.service-card .box .content h4 {
+  font-size: 3em;
+  font-weight: 700;
+}
+.card.service-card .box .content h4 sup {
+  font-size: 0.75em;
+  font-weight: 300;
+}
+.card.service-card .box .content ul {
+  position: relative;
+}
+.card.service-card .box .content ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+.card.service-card .box .content ul li .fa-check {
+  color: chartreuse;
+  margin-right: 0.4rem;
+}
+.card.service-card .box .content ul li .fa-times {
+  color: crimson;
+  margin-right: 0.4rem;
+}
+.card.service-card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: crimson;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+/* .card.service-card .box .content a:hover {
+  background: #424242;
+} */
+.card.service-card:nth-child(1) .box .content a,
+.card.service-card:nth-child(1) .box .content .icon {
+  background: crimson;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card.service-card:nth-child(2) .box .content a,
+.card.service-card:nth-child(2) .box .content .icon {
+  background: rgb(90, 3, 189);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card.service-card:nth-child(3) .box .content a,
+.card.service-card:nth-child(3) .box .content .icon {
+  background: rgb(3, 180, 86);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

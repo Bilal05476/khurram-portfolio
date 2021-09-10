@@ -31,26 +31,6 @@ const Services = () => {
           possimus sequi beatae impedit"
           />
         </div>
-        <div className="card-deck services-card mb-2">
-          <ServicesCard
-            icon="fa fa-shipping-fast"
-            title="Services Title"
-            desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          possimus sequi beatae impedit"
-          />
-          <ServicesCard
-            icon="fa fa-at"
-            title="Services Title"
-            desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          possimus sequi beatae impedit"
-          />
-          <ServicesCard
-            icon="fa fa-industry"
-            title="Services Title"
-            desc=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          possimus sequi beatae impedit"
-          />
-        </div>
       </div>
     </div>
   );

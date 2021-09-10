@@ -32,9 +32,9 @@ const Contact = () => {
             Sheikh <span>Khurram</span>
           </a>
           <p className="mb-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quo
-            officia assumenda quidem deleniti dignissimos voluptatum! Tenetur
-            sed molestiae impedit?
+            I’m Khurram Social Media solutions provider. With over 2 years of
+            Experience, I’ve learned several techniques and strategies to out
+            rank your competitor’s and grow your Social Media presence.
           </p>
         </div>
         <div className="col-md-2 navigationLinks ">
@@ -149,7 +149,16 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-md-12 text-left pt-1 copyrightSection">
-          <small>Copyright &copy; 2021, Sheikh Khurram</small>
+          <small>
+            Copyright &copy; 2021, Sheikh Khurram,<br /> Made with 💝 By{" "}
+            <a
+              className="text-info"
+              href="https://bilalahmed.work"
+              target="blank"
+            >
+              Bilal Ahmed
+            </a>
+          </small>
         </div>
       </div>
     </div>

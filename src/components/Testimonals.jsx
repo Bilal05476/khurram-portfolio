@@ -1,8 +1,8 @@
-import "../css/Blog.css";
+import "../css/Testimonals.css";
 
-const Blog = () => {
+const Testimonals = () => {
   return (
-    <div id="blog" className="container-fluid">
+    <div id="testimonals" className="container-fluid">
       <div className="row">
         <div className="col-12 col-md-9 bg-info p-5"></div>
         <div className="col-12 col-md-3 bg-secondary p-5 newsletterCard"></div>
@@ -11,4 +11,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Testimonals;
