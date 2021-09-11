@@ -12,7 +12,7 @@ const TopJumbotron = () => {
               HI! I'M <span>KHURRAM</span>
             </h1>
             <h4 className="lead">
-              I'AM A <span>SOCIAL MEDIA</span> PROBLEM SOLVER
+              I'M A <span>SOCIAL MEDIA</span> PROBLEM SOLVER
             </h4>
             <p className="">
               I’m Khurram Social Media solutions provider. With over 2 years of
