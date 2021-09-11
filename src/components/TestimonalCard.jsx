@@ -1,6 +1,6 @@
 const TestimonalCard = ({ name, designation, comment }) => {
   return (
-    <div className="myCarousel">
+    <div className="myCarousel" data-aos="flip-left">
       <h3>{name}</h3>
       <h4>{designation}</h4>
       <p>{comment}</p>

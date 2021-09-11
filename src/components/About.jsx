@@ -5,8 +5,8 @@ const About = () => {
   return (
     <>
       <div id="about" className="about container">
-        <div className="row">
-          <div className="col-md-6">
+        <div className="row" data-aos="fade-in">
+          <div className="col-md-6" data-aos="flip-left">
             <div className="about-image">
               <img src={Profile} alt="Profile" />
             </div>

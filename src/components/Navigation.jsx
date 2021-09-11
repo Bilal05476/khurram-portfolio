@@ -41,7 +41,7 @@ const Navigation = () => {
       }`}
     >
       <div className="container">
-        <a className="navbar-brand" href="#home">
+        <a className="navbar-brand" href="#home" data-aos="fade-in">
           Sheikh <span>Khurram</span>
         </a>
         <button

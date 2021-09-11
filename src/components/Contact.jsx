@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="contact container-fluid">
-      <div className="row">
+      <div className="row" data-aos="fade-in">
         <div className="col-md-3 introSection ">
           <a className="navbar-brand" href="#home">
             Sheikh <span>Khurram</span>

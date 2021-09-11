@@ -6,7 +6,7 @@ const TopJumbotron = () => {
   return (
     <>
       <div id="home" className="jumbotron jumbotron-fluid">
-        <div className="row container">
+        <div className="row container" data-aos="zoom-in">
           <div className="col-md-6 left-div">
             <h1 className="display-4">
               HI! I'M <span>KHURRAM</span>

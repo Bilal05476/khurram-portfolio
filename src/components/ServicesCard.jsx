@@ -15,7 +15,7 @@ const ServicesCard = ({
         className={`card service-card ${packageClass}`}
         style={{ height: toggleDetails ? "900px" : "500px" }}
       >
-        <div className="box">
+        <div className="box" data-aos="zoom-in">
           <div className="content">
             <div className="icon">
               <i className="fa fa-paper-plane"></i>

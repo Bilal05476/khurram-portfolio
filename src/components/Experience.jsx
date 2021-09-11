@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <div id="experience" className="experience">
       <div className="container">
-        <div className="row">
+        <div className="row" data-aos="fade-in">
           <div className="experience-header col-md-12">
             <small>QUALIFICATION</small>
             <h1 className="display-5">MY EXPERIENCE</h1>

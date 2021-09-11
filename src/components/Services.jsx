@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <div id="services" className="services">
       <div className="container">
-        <div className="row">
+        <div className="row" data-aos="fade-in">
           <div className="services-header col-md-12">
             <small>SERVICES</small>
             <h1 className="display-5">MY SERVICES</h1>

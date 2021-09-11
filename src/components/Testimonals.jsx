@@ -6,7 +6,7 @@ import TestimonalCard from "./TestimonalCard";
 const Testimonals = () => {
   return (
     <div id="testimonal" className="container-fluid">
-      <div className="row">
+      <div className="row" data-aos="fade-in">
         <div className="services-header col-md-12">
           <h1 className="display-5">TESTIMONALS</h1>
           <div className="hori-line"></div>

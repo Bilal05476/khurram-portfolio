@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <div id="portfolio">
       <div className="container">
-        <div className="row">
+        <div className="row" data-aos="fade-in">
           <div className="services-header col-md-12">
             <small>PORTFOLIO</small>
             <h1 className="display-5">MY PORTFOLIO</h1>
