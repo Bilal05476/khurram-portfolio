@@ -43,7 +43,7 @@ const HireModal = ({ id }) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-body">
-              <form name="hireForm" method="POST" data-netlify="true">
+              <form name="hireForm" method="post" data-netlify="true">
                 <p className="navbar-brand my-3 text-center">
                   Sheikh <span>Khurram</span>
                 </p>
