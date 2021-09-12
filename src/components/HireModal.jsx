@@ -43,8 +43,13 @@ const HireModal = ({ id }) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-body">
-              <form name="hireForm" netlify>
-                {/* <input type="hidden" name="form-name" value="hireForm" /> */}
+              <form
+                name="hireForm"
+                method="post"
+                data-netlify="true"
+                onSubmit={onSubmitModal}
+              >
+                <input type="hidden" name="form-name" value="hireForm" />
                 <p className="navbar-brand my-3 text-center">
                   Sheikh <span>Khurram</span>
                 </p>
@@ -80,11 +85,7 @@ const HireModal = ({ id }) => {
                 {!name || !email || !phone || !requirements ? (
                   <div className="disabledHireBtn">Send</div>
                 ) : (
-                  <button
-                    onClick={onSubmitModal}
-                    type="submit"
-                    className="hireBtn"
-                  >
+                  <button type="submit" className="hireBtn">
                     Send
                   </button>
                 )}
