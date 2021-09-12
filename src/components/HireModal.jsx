@@ -44,7 +44,6 @@ const HireModal = ({ id }) => {
           <div className="modal-content">
             <div className="modal-body">
               <form name="hireForm" method="POST" data-netlify="true">
-                {/* <input type="hidden" name="form-name" value="hireForm" /> */}
                 <p className="navbar-brand my-3 text-center">
                   Sheikh <span>Khurram</span>
                 </p>
