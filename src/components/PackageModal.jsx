@@ -62,9 +62,9 @@ const PackageModal = ({ id }) => {
             <div className="modal-body">
               <form
                 name="packageForm"
-                method="post"
-                data-netlify="true"
-                onSubmit={onSubmitModal}
+                method="POST"
+                
+                action="/success"
               >
                 <input type="hidden" name="form-name" value="packageForm" />
                 <p className="navbar-brand my-3 text-center">

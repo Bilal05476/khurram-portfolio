@@ -134,9 +134,9 @@ const Contact = () => {
           <div className="subs-details pt-1">
             <form
               name="subscribeForm"
-              method="post"
-              data-netlify="true"
-              onSubmit={onSubmitSubs}
+              method="POST"
+          
+              action="/success"
             >
               <input type="hidden" name="form-name" value="subscribeForm" />
               <input
