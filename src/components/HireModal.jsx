@@ -1,6 +1,11 @@
 import "../css/HireModal.css";
+import { useState } from "react";
 
 const HireModal = ({ id }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [requirements, setRequirements] = useState("");
   return (
     <div className="hireMe">
       <div
@@ -24,6 +29,8 @@ const HireModal = ({ id }) => {
                   name="name"
                   placeholder="Enter your name"
                   required={true}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
                 <input
                   id="email"
@@ -31,6 +38,8 @@ const HireModal = ({ id }) => {
                   type="email"
                   placeholder="Enter your email"
                   required={true}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
                   id="phone"
@@ -38,6 +47,8 @@ const HireModal = ({ id }) => {
                   type="text"
                   placeholder="Enter your phone"
                   required={true}
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
                 <textarea
                   rows="2"
@@ -46,11 +57,16 @@ const HireModal = ({ id }) => {
                   type="text"
                   placeholder="Enter your requirements"
                   required={true}
+                  value={requirements}
+                  onChange={(e) => setRequirements(e.target.value)}
                 />
-                <button type="submit" className="hireBtn">
-                  Send
-                </button>
-
+                {!name || !email || !phone || !requirements ? (
+                  <div className="disabledHireBtn">Send</div>
+                ) : (
+                  <button type="submit" className="hireBtn">
+                    Send
+                  </button>
+                )}
                 <button data-dismiss="modal" type="button" className="closeBtn">
                   close
                 </button>

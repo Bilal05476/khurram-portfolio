@@ -1,34 +1,11 @@
 import { useState } from "react";
-import Swal from "sweetalert2";
 
 const PackageModal = ({ id }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [packageName, setPackageName] = useState("select");
-  const Toast = Swal.mixin({
-    toast: true,
-    position: "top-end",
-    showConfirmButton: false,
-    timer: 5000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-      toast.addEventListener("mouseenter", Swal.stopTimer);
-      toast.addEventListener("mouseleave", Swal.resumeTimer);
-    },
-  });
-  const onSubmitModal = (e) => {
-    e.preventDefault();
-    Toast.fire({
-      icon: "success",
-      title: "I will contact you shortly, Thank you!",
-    });
-    setName("");
-    setEmail("");
-    setPhone("");
-    setPackageName("select");
-  };
-
+ 
   const options = [
     {
       label: "Select",
