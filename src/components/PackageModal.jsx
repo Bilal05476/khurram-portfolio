@@ -60,12 +60,7 @@ const PackageModal = ({ id }) => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-body">
-              <form
-                name="packageForm"
-                method="POST"
-                
-                action="/success"
-              >
+              <form name="packageForm" method="POST" action="/success">
                 <input type="hidden" name="form-name" value="packageForm" />
                 <p className="navbar-brand my-3 text-center">
                   Sheikh <span>Khurram</span>
@@ -73,18 +68,24 @@ const PackageModal = ({ id }) => {
                 <input
                   type="text"
                   value={name}
+                  id="name"
+                  name="name"
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Enter your name"
                   required={true}
                 />
                 <input
                   type="email"
+                  id="email"
+                  name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   required={true}
                 />
                 <input
+                  id="phone"
+                  name="phone"
                   type="text"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
@@ -92,6 +93,8 @@ const PackageModal = ({ id }) => {
                   required={true}
                 />
                 <select
+                  id="package"
+                  name="package"
                   value={packageName}
                   onChange={(e) => setPackageName(e.target.value)}
                   style={{

@@ -132,17 +132,14 @@ const Contact = () => {
             Subs<span>cribe</span>
           </a>
           <div className="subs-details pt-1">
-            <form
-              name="subscribeForm"
-              method="POST"
-          
-              action="/success"
-            >
+            <form name="subscribeForm" method="POST" action="/success">
               <input type="hidden" name="form-name" value="subscribeForm" />
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
+                id="email"
+                name="email"
                 required
                 placeholder="Enter your email..."
               />
